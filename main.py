@@ -231,12 +231,12 @@ class LinuxDoBrowser:
                         self.click_like(page)
                         liked_articles.append({"title": article_title, "url": article_url})
                         like_count += 1
-                    if random.random() < REPLY_PROBABILITY:
-                        reply_message = self.click_reply(page)
-                        if reply_message:
-                            replied_articles.append(
-                                {"title": article_title, "url": article_url, "reply": reply_message})
-                            reply_count += 1
+                    # if random.random() < REPLY_PROBABILITY:
+                    #     reply_message = self.click_reply(page)
+                    #    if reply_message:
+                    #        replied_articles.append(
+                    #            {"title": article_title, "url": article_url, "reply": reply_message})
+                    #        reply_count += 1
                     if random.random() < COLLECT_PROBABILITY:
                         self.click_collect(page)
                         collected_articles.append({"title": article_title, "url": article_url})
