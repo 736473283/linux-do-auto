@@ -303,7 +303,7 @@ class LinuxDoBrowser:
 
             if USE_WXPUSHER:
                 elapsed_time = end_time - start_time
-                summary = f"Linux.do保活脚本 {end_time.strftime('%Y-%m-%d %H:%M:%S')}"
+                summary = f"Github Linux.do保活脚本 {end_time.strftime('%Y-%m-%d %H:%M:%S')}"
                 
                 # 获取并转义日志内容
                 log_content = log_stream.getvalue()
@@ -312,7 +312,7 @@ class LinuxDoBrowser:
 
                 # 创建 HTML 格式的内容
                 content = (
-                    f"<h1>Linux.do保活脚本 {end_time.strftime('%Y-%m-%d %H:%M:%S')}</h1>"
+                    f"<h1>Github Linux.do保活脚本 {end_time.strftime('%Y-%m-%d %H:%M:%S')}</h1>"
                     f"<br/><p style='color:red;'>"
                     f"账号: {USERNAME}<br/>"
                     f"开始执行时间: {start_time.strftime('%Y-%m-%d %H:%M:%S')}<br/>"
